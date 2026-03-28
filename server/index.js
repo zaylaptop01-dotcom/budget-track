@@ -12,7 +12,7 @@ const app = express()
 app.use(cors({
   origin: [
     'http://localhost:5173',
-    'https://budget-tracker-zay.vercel.app'
+    'https://budget-track-murex.vercel.app'
   ]
 }))
 app.use(express.json())
