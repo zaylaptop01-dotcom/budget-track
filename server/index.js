@@ -9,7 +9,12 @@ const transactionRoutes = require('./routes/transactions')
 
 const app = express()
 
-app.use(cors())
+app.use(cors({
+  origin: [
+    'http://localhost:5173',
+    'https://budget-tracker-zay.vercel.app'
+  ]
+}))
 app.use(express.json())
 
 // Mount routes
